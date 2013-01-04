@@ -24,22 +24,22 @@
   <![endif]-->
   <div id="hd" class="fullwidth">
     <div id="menu">
-      <ul>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/;maps">Map</a></li>
-        <li><a href="/calendar">Calendar</a></li>
-        <li><a href="/forums">Forums</a></li>
-        <li><a href="/;more">More&nbsp;»</a></li>
+      <ul class="menu-i18n">
+        <li><a href="/projects" data-i18n="menu.projects"></a></li>
+        <li><a href="/;maps" data-i18n="menu.map"></a></li>
+        <li><a href="/calendar" data-i18n="menu.calendar"></a></li>
+        <li><a href="/forums" data-i18n="menu.forums"></a></li>
+        <li><a href="/;more" data-i18n="menu.more"></a></li>
       </ul>
     </div>
     <div id="search">
-      <ul>
-        <li><a href="/" class="tooltip"><img src='/resources/advanced_search_icon.png' alt="" /><span>Advanced</span></a></li>
+      <ul class="search-i18n">
+        <li><a href="/" class="tooltip"><img src='/resources/advanced_search_icon.png' alt="" /><span data-i18n="search.advanced"></span></a></li>
         <li>
           <form action="#" method="get">
             <div class="search placeholder-field">
               <input type="text" name="search_text" class="search-input" onmousedown="this.style.width = 200 + 'px';" />
-              <input type="submit" class="submit-button" value="Search" class="button" />
+              <input type="submit" class="submit-button" value="Search" class="button" data-i18n="search.search" />
             </div>
           </form>
         </li>
@@ -55,8 +55,8 @@
         <li><a href="/" class="tooltip"><img src='/resources/lightbulb.png' alt="" /><span>Help</span></a></li>
       </ul>
     </div>
-    <h1 title="${title}">
-      <a href="/" title="${title}">Zeitgeist Movement Global Connect</a>
+    <h1>
+      <a href="/" class="tzm-i18n" data-i18n="tzm"></a>
     </h1>
   </div><!-- id="hd"-->
   <div id="page">
@@ -392,6 +392,8 @@
   <a id="footer_trigger" class="trigger_active" href="#"></a><!-- Trigger Button -->
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+  <script type="text/javascript" src="//i18next.com/public/download/versions/i18next-1.5.10.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/i18next-1.5.10.min.js"><\/script>')</script>
   <script type="text/javascript" src="js/footer.js"></script>
 </body>
 </html>
