@@ -34,11 +34,11 @@
     </div>
     <div id="search">
       <ul>
-        <li><a href="/;advanced_search" title="Advanced Search" class="advanced-search">Advanced Search</a></li>
+        <li><a href="/" class="tooltip"><img src='/resources/advanced_search_icon.png' alt="" /><span>Advanced</span></a></li>
         <li>
-          <form action=";browse_content" method="get">
+          <form action="#" method="get">
             <div class="search placeholder-field">
-              <input type="text" name="search_text" />
+              <input type="text" name="search_text" class="search-input" onmousedown="this.style.width = 200 + 'px';" />
               <input type="submit" class="submit-button" value="Search" class="button" />
             </div>
           </form>
@@ -47,11 +47,12 @@
     </div>
     <div id="user-menu">
       <ul>
-        <li><a href="${login}" title="Login" class="login">Login</a></li>
-        <li><a href="${user/home}" title="${user/title}" class="profile">My profile</a></li>
-        <li><a href="/;logout" title="Logout" class="logout">Log out</a></li>
-        <li><a href="/;contact" title="Contact" class="contact">Contact</a></li>
-        <li><a href="/help" title="Help" class="help">Help</a></li>
+        <li><a href="/" class="tooltip"><img src='http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=32' alt="" /><span>Gravatar</span></a></li>
+        <li><a href="/" class="tooltip"><img src='/resources/profile.png' alt="" /><span>Profile</span></a></li>
+        <li><a href="/" class="tooltip"><img src='/resources/login.png' alt="" /><span>Login</span></a></li>
+        <li><a href="/" class="tooltip"><img src='/resources/logout.png' alt="" /><span>Log out</span></a></li>
+        <li><a href="/" class="tooltip"><img src='/resources/communication.png' alt="" /><span>Contact</span></a></li>
+        <li><a href="/" class="tooltip"><img src='/resources/lightbulb.png' alt="" /><span>Help</span></a></li>
       </ul>
     </div>
     <h1 title="${title}">
