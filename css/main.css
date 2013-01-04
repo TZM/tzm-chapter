@@ -94,11 +94,11 @@ h1, p {
 /**************************************************************************
 * LOGO
 **************************************************************************/
+
 #hd h1 {
     background:url(/resources/tzm-logo-32.png) top left no-repeat;
     width:83px;
     height:37px;
-    margin-bottom: 0px;
 }
 
 #hd h1 a{
@@ -116,95 +116,98 @@ h1, p {
 #hd h1 a:hover{background:none;border:none;text-decoration: none;}
 
 /**************************************************************************
- * MENU
- * ***********************************************************************/
+* MENU
+* ***********************************************************************/
 #menu {
-  margin-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 #menu ul {
-  white-space: nowrap;
+    padding-left: 50px;
+    white-space: nowrap;
 }
 
 #menu ul li {
-  float: left;
-  list-style-image: none;
-  list-style-position: outside;
-  list-style-type: none;
-  margin-right: 4px;
+    float: left;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-right: 4px;
 }
 
 #menu ul li a {
-  display: block;
-  font-size: 1em;
-  padding: 5px 15px;
-  text-decoration: none;
-  /* normal style */
-  background: #333;
-  color: #fff;
+    display: block;
+    font-size: 1em;
+    padding: 5px 15px;
+    text-decoration: none;
+    /* normal style */
+    background: #333;
+    color: #fff;
 }
 
 #menu ul li a:hover {
-  background: #ccc;
-  color: #000;
+    background: #ccc;
+    color: #000;
 }
 
 #menu ul li.in-path a {
-  background: #fff;
-  color: #333;
+    background: #fff;
+    color: #333;
 }
+
+
 /**************************************************************************
- * Profile 
- **************************************************************************/
+* Profile 
+**************************************************************************/
 #user-menu {}
-#user-menu ul{float:right;list-style:none;margin:0 0 0 15px;padding:0;}
-#user-menu li{float:left;margin:3px;padding:0;}
+    #user-menu ul{float:right;list-style:none;margin:0 0 0 15px;padding:0;}
+    #user-menu li{float:left;margin:3px;padding:0;}
 
-#user-menu .profile {
-    display: inline-block;
-    text-indent: -9999px;
-    background:url(/resources/profile.png) 0 0 no-repeat;
-    width:32px;
-    height:32px;
-}
+    #user-menu .profile {
+        display: inline-block;
+        text-indent: -9999px;
+        background:url(/resources/profile.png) 0 0 no-repeat;
+        width:32px;
+        height:32px;
+    }
 
-#user-menu .login {
-    display: inline-block;
-    text-indent: -9999px;
-    background:url(/resources/login.png) 0 0 no-repeat;
-    width:32px;
-    height:32px;
-}
+    #user-menu .login {
+        display: inline-block;
+        text-indent: -9999px;
+        background:url(/resources/login.png) 0 0 no-repeat;
+        width:32px;
+        height:32px;
+    }
 
-#user-menu .logout {
-    display: inline-block;
-    text-indent: -9999px;
-    background:url(/resources/logout.png) 0 0 no-repeat;
-    width:32px;
-    height:32px;
-}
+    #user-menu .logout {
+        display: inline-block;
+        text-indent: -9999px;
+        background:url(/resources/logout.png) 0 0 no-repeat;
+        width:32px;
+        height:32px;
+    }
 
-#user-menu .help {
-    display: inline-block;
-    text-indent: -9999px;
-    background:url(/resources/lightbulb.png) 0 0 no-repeat;
-    width:32px;
-    height:32px;
-}
+    #user-menu .help {
+        display: inline-block;
+        text-indent: -9999px;
+        background:url(/resources/lightbulb.png) 0 0 no-repeat;
+        width:32px;
+        height:32px;
+    }
 
-#user-menu .contact {
-    display: inline-block;
-    text-indent: -9999px;
-    background:url(/resources/communication.png) 0 0 no-repeat;
-    width:32px;
-    height:32px;
-}
+    #user-menu .contact {
+        display: inline-block;
+        text-indent: -9999px;
+        background:url(/resources/communication.png) 0 0 no-repeat;
+        width:32px;
+        height:32px;
+    }
 
-#user-menu a.profile:hover {background:url(/resources/profile-hover.png) 0 0 no-repeat;}
-#user-menu a.login:hover {background:url(/resources/login-hover.png) 0 0 no-repeat;}
-#user-menu a.logout:hover {background:url(/resources/logout-hover.png) 0 0 no-repeat;}
-#user-menu a.help:hover {background:url(/resources/lightbulb-hover.png) 0 0 no-repeat;}
-#user-menu a.contact:hover {background:url(/resources/communication-hover.png) 0 0 no-repeat;}
+    #user-menu a.profile:hover {background:url(/resources/profile-hover.png) 0 0 no-repeat;}
+    #user-menu a.login:hover {background:url(/resources/login-hover.png) 0 0 no-repeat;}
+    #user-menu a.logout:hover {background:url(/resources/logout-hover.png) 0 0 no-repeat;}
+    #user-menu a.help:hover {background:url(/resources/lightbulb-hover.png) 0 0 no-repeat;}
+    #user-menu a.contact:hover {background:url(/resources/communication-hover.png) 0 0 no-repeat;}
 
 /**************************************************************************
 * Search 
