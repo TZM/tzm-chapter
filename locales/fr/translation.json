@@ -1,14 +1,25 @@
 {
-  "tzm": "Chapters - Zeitgeist Movement"
+  "tzm": "Branches - Le Mouvement Zeitgeist"
   ,"menu": {
-    "projects": "Projects"
-    ,"map": "Map"
-    ,"calendar": "Calendar"
+    "projects": "Projets"
+    ,"map": "Carte"
+    ,"calendar": "Événements"
     ,"forums": "Forums"
-    ,"more": "More »"
+    ,"more": "Plus »"
   }
   ,"search": {
-    "advanced": "Advanced"
-    ,"search": "Search"
+    "advanced": "Avancé"
+    ,"search": "Rechercher"
+  }
+  ,"user": {
+    "gravatar": "Gravatar"
+    ,"profile": "Profile"
+    ,"login": "Login"
+    ,"log-out": "Log out"
+    ,"contact": "Contact"
+    ,"help": "Help"
+  }
+  ,"footer": {
+    "zeitgeist": "Zeitgeist"
   }
 }

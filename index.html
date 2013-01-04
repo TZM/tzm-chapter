@@ -46,13 +46,13 @@
       </ul>
     </div>
     <div id="user-menu">
-      <ul>
-        <li><a href="/" class="tooltip"><img src='http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=32' alt="" /><span>Gravatar</span></a></li>
-        <li><a href="/" class="tooltip"><img src='/resources/profile.png' alt="" /><span>Profile</span></a></li>
-        <li><a href="/" class="tooltip"><img src='/resources/login.png' alt="" /><span>Login</span></a></li>
-        <li><a href="/" class="tooltip"><img src='/resources/logout.png' alt="" /><span>Log out</span></a></li>
-        <li><a href="/" class="tooltip"><img src='/resources/communication.png' alt="" /><span>Contact</span></a></li>
-        <li><a href="/" class="tooltip"><img src='/resources/lightbulb.png' alt="" /><span>Help</span></a></li>
+      <ul class="user-i18n">
+        <li><a href="/" class="tooltip"><img src='http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=32' alt="" /><span data-i18n="user.gravatar"></span></a></li>
+        <li><a href="/" class="tooltip"><img src='/resources/profile.png' alt="" /><span data-i18n="user.profile"></span></a></li>
+        <li><a href="/" class="tooltip"><img src='/resources/login.png' alt="" /><span data-i18n="user.login"></span></a></li>
+        <li><a href="/" class="tooltip"><img src='/resources/logout.png' alt="" /><span data-i18n="user.log-out"></span></a></li>
+        <li><a href="/" class="tooltip"><img src='/resources/communication.png' alt="" /><span data-i18n="user.contact"></span></a></li>
+        <li><a href="/" class="tooltip"><img src='/resources/lightbulb.png' alt="" /><span data-i18n="user.help"></span></a></li>
       </ul>
     </div>
     <h1>
@@ -63,14 +63,12 @@
     <!--${languages} Bread crumbs -->
   </div>
   <div><!-- END FOOTER -->
-    <ul id="footer" class="fullwidth">
+    <ul id="footer" class="fullwidth footer-i18n">
       <li id="footer_home"><a href="/"><img src="/resources/phx-logo-30x34.png" alt="Home" /></a></li>
-
-      <li><a href="/" class="dropup">Zeitgeist</a><!-- Begin First Menu Item -->
-
+      <li><a href="/" class="dropup" data-i18n="footer.zeitgeist"></a><!-- Begin First Menu Item -->
         <div class="footer_dropup drop12columns"><!-- Begin Item Container -->
           <div class="col_12">
-            <h4>The Zeitgeist Movement!</h4>
+            <h4 data-i18n="tzm"></h4>
           </div>
           <div class="col_6">
             <p>You can use any of the 6 included jQuery effects to show the content, it can be on mouse hover or on click, with 3 different transitions : fade, slide or toggle. There's also an option to show the footer when the page loads and hide it after a delay. This option can be disabled.</p>
@@ -157,7 +155,7 @@
 
 
 
-      <li><a href="/" class="dropup">Tools</a><!-- Begin Second Menu Item -->
+      <li><a href="/" class="dropup" data-i18n="footer.tools"></a><!-- Begin Second Menu Item -->
 
 
         <div class="footer_dropup drop12columns"><!-- Begin Item Container -->
@@ -258,7 +256,7 @@
 
 
 
-      <li><a href="/" class="dropup">Documentations</a><!-- Begin Third Menu Item -->
+      <li><a href="/" class="dropup" data-i18n="footer.documentations"></a><!-- Begin Third Menu Item -->
 
 
         <div class="footer_dropup drop6columns"><!-- Begin Item Container -->
@@ -286,7 +284,7 @@
 
 
 
-      <li><a href="/" class="dropup">F.A.Q</a><!-- Begin Fourth Menu Item -->
+      <li><a href="/" class="dropup"  data-i18n="footer.faq">F.A.Q</a><!-- Begin Fourth Menu Item -->
 
 
         <div class="footer_dropup drop8columns"><!-- Begin Item Container -->
@@ -379,7 +377,7 @@
       <li id="social"><!-- Begin Social Icons Item -->
         <ul><!-- Social Icons -->
           <!-- The span is the text appearing on hover, use the tooltip class in the link -->
-          <li><a href="/" class="tooltip"><img src='/resources/icons/twitter.png' alt="" class="footer_icon" /><span>Twitter</span></a></li>
+          <li><a href="/" class="tooltip"><img src='/resources/icons/twitter.png' alt="" class="footer_icon" /><span  data-i18n="footer.twitter"></span></a></li>
           <li><a href="/" class="tooltip"><img src='/resources/icons/rss.png' alt="" class="footer_icon" /><span>RSS</span></a></li>
           <li><a href="/" class="tooltip"><img src='/resources/icons/flickr.png' alt="" class="footer_icon" /><span>Flickr</span></a></li>
           <li><a href="/" class="tooltip"><img src='/resources/icons/facebook.png' alt="" class="footer_icon" /><span>Facebook</span></a></li>

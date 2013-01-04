@@ -11,4 +11,15 @@
     "advanced": "Advanced"
     ,"search": "Search"
   }
+  ,"user": {
+    "gravatar": "Gravatar"
+    ,"profile": "Profile"
+    ,"login": "Login"
+    ,"log-out": "Log out"
+    ,"contact": "Contact"
+    ,"help": "Help"
+  }
+  ,"footer": {
+    "zeitgeist": "Zeitgeist"
+  }
 }
