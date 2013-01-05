@@ -1,12 +1,20 @@
 jQuery(function($) {
-    language_complete = navigator.language.split("-");
+    var setLng = $.url().param('setLng');
+    if (setLng)
+    {
+      language_complete = setLng.split("-");
+    }
+    else
+    {
+      language_complete = navigator.language.split("-");
+    }
     language = (language_complete[0]);
-    //language = 'fr';
     console.log("I speak (root): %s", language);
 
     i18n.init({ lng: language, debug: true }, function() {
         // save to use translation function as resources are fetched
         $(".tzm-i18n").i18n();
+        $(".page-i18n").i18n();
         $(".menu-i18n").i18n();
         $(".user-i18n").i18n();
         $(".search-i18n").i18n();
