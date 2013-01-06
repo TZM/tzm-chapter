@@ -20,6 +20,11 @@ jQuery(function($) {
         $(".search-i18n").i18n();
         $(".footer-i18n").i18n();
     });
+    // language selector
+    $("#language").change(function(){
+        var value = $(this).val();
+        console.log(value);
+    });
     // footer navigation
     var slide = false;
     var height = $('#footer').height();
@@ -40,4 +45,22 @@ jQuery(function($) {
             slide = false;
         }
     });
+    
 });
+function createDropDown(){
+    var source = $("#source");
+    var selected = source.find("option[selected]");
+    var options = $("option", source);
+
+    $("body").append('<dl id="target" class="dropdown"></dl>')
+    $("#target").append('<dt><a href="#">' + selected.text() + 
+    '<span class="value">' + selected.val() + 
+    '</span></a></dt>')
+    $("#target").append('<dd><ul></ul></dd>')
+
+    options.each(function(){
+        $("#target dd ul").append('<li><a href="#">' + 
+        $(this).text() + '<span class="value">' + 
+        $(this).val() + '</span></a></li>');
+    });
+}
