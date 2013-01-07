@@ -19,3 +19,6 @@ The steps that need to be taken to implement this, feedback procedure, etc...
 
 * i18n - internationalization of the content such as howtos, blog posts, wikis, images, videos etc...
 
+#List of languages in UTF-8
+
+[http://www.langtag.net/registries/lsr-language-utf8.txt](http://www.langtag.net/registries/lsr-language-utf8.txt)
