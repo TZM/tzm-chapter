@@ -10,14 +10,13 @@ function ZmgcClient() {
   };
 
   var width = $("#map").width(),
-      mapCanvasHeight = (width * 0.35);
+      mapCanvasHeight = (width * 0.49);
 
   this.drawMap = function() {
     var data;
 
     // Most parts of D3 don"t know anything about SVG—only DOM.
-    self.svg = d3.select("#map").append("svg:svg").attr("width", "100%").attr("height", "87%").attr("viewBox", "0 0 " + width + " " + mapCanvasHeight);
-
+    self.svg = d3.select("#map").append("svg:svg").attr("width", "100%").attr("height", mapCanvasHeight);
     self.map = d3.geo.equirectangular().scale(width);
     self.projection = d3.geo.path().projection(self.map);
 
@@ -25,7 +24,7 @@ function ZmgcClient() {
     self.countries = self.svg.append("svg:g").attr("id", "countries");
 
     // Load data from .json file
-    d3.json("/data/world-countries.json", function(json) {
+    d3.json("../data/world-countries.json", function(json) {
       self.countries.selectAll("path") // select all the current path nodes
       .data(json.features) // bind these to the features array in json
       .enter().append("path") // if not enough elements create a new path
