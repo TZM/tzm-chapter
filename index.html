@@ -22,54 +22,35 @@
   <!--[if lt IE 7]>
   <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
-  <div id="hd" class="fullwidth">
-    <div id="menu">
-      <ul class="menu-i18n">
-        <li><a href="/projects" data-i18n="menu.projects"></a></li>
-        <li><a href="/;maps" data-i18n="menu.map"></a></li>
-        <li><a href="/calendar" data-i18n="menu.calendar"></a></li>
-        <li><a href="/forums" data-i18n="menu.forums"></a></li>
-        <li><a href="/;more" data-i18n="menu.more"></a></li>
+  <header>
+    <nav class="fullwidth clearfix top">
+      <ul class="menu">
+        <li><a href="#" data-i18n="menu.projects" class="projects"></a></li>
+        <li><a href="#" data-i18n="menu.map" class="map"></a></li>
+        <li><a href="#" data-i18n="menu.calendar" class="calendar"></a></li>
+        <li><a href="#" data-i18n="menu.forums" class="forums"></a></li>
+        <li><a href="#" data-i18n="menu.more" class="more"></a></li>
       </ul>
-    </div>
-    <div id="search">
-      <ul class="search-i18n">
-        <li><a href="/" class="tooltip"><img src='/resources/advanced_search_icon.png' alt="" /><span data-i18n="search.advanced"></span></a></li>
-        <li>
-          <form action="#" method="get">
-            <div class="search placeholder-field">
-              <input type="text" name="search_text" class="search-input" onmousedown="this.style.width = 200 + 'px';" />
-              <input type="submit" class="submit-button" value="Search" class="button" data-i18n="search.search" />
-            </div>
-          </form>
-        </li>
-      </ul>
-    </div>
-    <div id="user-menu">
-      <ul class="user-i18n">
+      <ul class="user-menu">
         <li><a href="/" class="tooltip"><img src='http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=32' alt="" /><span data-i18n="user.gravatar"></span></a></li>
         <li><a href="/" class="tooltip"><img src='/resources/profile.png' alt="" /><span data-i18n="user.profile"></span></a></li>
         <li><a href="/" class="tooltip"><img src='/resources/login.png' alt="" /><span data-i18n="user.login"></span></a></li>
         <li><a href="/" class="tooltip"><img src='/resources/logout.png' alt="" /><span data-i18n="user.log-out"></span></a></li>
         <li><a href="/" class="tooltip"><img src='/resources/communication.png' alt="" /><span data-i18n="user.contact"></span></a></li>
         <li><a href="/" class="tooltip"><img src='/resources/lightbulb.png' alt="" /><span data-i18n="user.help"></span></a></li>
+        <li><a href="/" class="tooltip"><img src='/resources/advanced_search_icon.png' alt="" /><span data-i18n="search.advanced"></span></a></li>
+        <li class="search-form">
+          <form action="#" method="get">
+            <div class="placeholder-field">
+              <input type="text" name="search_text" class="search-input" onmousedown="this.style.width = 200 + 'px';" />
+              <input type="submit" class="submit-button" value="Search" class="button" data-i18n="search.search" />
+            </div>
+          </form>
+        </li>
       </ul>
-    </div>
-    <h1>
-      <a href="/" class="tzm-i18n" data-i18n="tzm"></a>
-    </h1>
-    <select id="language">
-        <option id="lang-br" class="lang/class" value="pt-BR">Brasilian</option>
-        <option id="lang-fr" class="lang/class" value="fr-FR">French</option>
-        <option id="lang-de" class="lang/class" value="de-DE">Germany</option>
-        <option id="lang-hi" class="lang/class" value="in-IN">Hindi</option>
-        <option id="lang-jp" class="lang/class" value="jp-JP">Japan</option>
-        <option id="lang-rs" class="lang/class" value="rs-RS">Serbian</option>
-        <option id="lang-ru" class="lang/class" value="ru-RU">Rusian</option>
-        <option id="lang-en" class="lang/class" value="en-UK">English - UK</option>
-        <option id="lang-us" class="lang/class" value="en-US">English - US</option>
-    </select>
-  </div><!-- id="hd"-->
+      <h1><a href="/" class="tzm-i18n" data-i18n="tzm"></a></h1>
+  </nav><!-- id="hd"-->
+  </header>
   <div id="page" class="page-i18n">
     <!--${languages} Bread crumbs -->
       <p data-i18n="welcome.p1"></p>
@@ -163,16 +144,11 @@
 
         </div><!-- End Item Container -->
 
-
       </li><!-- End First Menu Item -->
-
-
 
       <li><a href="/" class="dropup" data-i18n="footer.tools"></a><!-- Begin Second Menu Item -->
 
-
         <div class="footer_dropup drop12columns"><!-- Begin Item Container -->
-
 
           <div class="col_12">
             <h3>Up to 12 columns !</h3>
@@ -387,8 +363,19 @@
           </div>
         </div><!-- End Item Container -->
       </li><!-- End Fourth Item -->
-      <li id="set_lang"><!-- Language selector -->
-
+      <li><a href="/" class="dropup"  data-i18n="footer.languages">Languages</a><!-- Language selector -->
+        <div class="footer_dropup drop1columns"><!-- Begin Item Container -->
+          <select class="language">
+            <option class="lang-br" class="lang/class" value="pt-BR">Brasilian</option>
+            <option class="lang-fr" class="lang/class" value="fr-FR">French</option>
+            <option class="lang-de" class="lang/class" value="de-DE">Germany</option>
+            <option class="lang-hi" class="lang/class" value="in-IN">Hindi</option>
+            <option class="lang-jp" class="lang/class" value="jp-JP">Japanese</option>
+            <option class="lang-rs" class="lang/class" value="rs-RS">Serbian</option>
+            <option class="lang-ru" class="lang/class" value="ru-RU">Rusian</option>
+            <option class="lang-en" class="lang/class" value="en-UK">English - UK</option>
+            <option class="lang-us" class="lang/class" value="en-US">English - US</option>
+          </select>
       </li><!-- End language selector -->
       <li id="social"><!-- Begin Social Icons Item -->
         <ul><!-- Social Icons -->
@@ -397,7 +384,7 @@
           <li><a href="/" class="tooltip"><img src='/resources/icons/rss.png' alt="" class="footer_icon" /><span>RSS</span></a></li>
           <li><a href="/" class="tooltip"><img src='/resources/icons/flickr.png' alt="" class="footer_icon" /><span>Flickr</span></a></li>
           <li><a href="/" class="tooltip"><img src='/resources/icons/facebook.png' alt="" class="footer_icon" /><span>Facebook</span></a></li>
-          <li><a href="/" class="tooltip"><img src='/resources/icons/youtube.png' alt="" class="footer_icon" /><span>You Tube</span></a></li>
+          <li><a href="/" class="tooltip"><img src='/resources/icons/youtube.png' alt="" class="footer_icon" /><span>YouTube</span></a></li>
           <!-- End Social Icons -->
         </ul><!-- End Social Icons -->
       </li><!-- End Social Icons Item -->

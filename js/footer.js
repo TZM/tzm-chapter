@@ -15,8 +15,8 @@ jQuery(function($) {
         // save to use translation function as resources are fetched
         $(".tzm-i18n").i18n();
         $(".page-i18n").i18n();
-        $(".menu-i18n").i18n();
-        $(".user-i18n").i18n();
+        $(".menu").i18n();
+        $(".user-menu").i18n();
         $(".search-i18n").i18n();
         $(".footer-i18n").i18n();
     });
@@ -45,7 +45,14 @@ jQuery(function($) {
             slide = false;
         }
     });
-    
+    $('.projects').live('click', function() {
+        console.log('click on projects button');
+        $('#page:first').empty().load('blog.html');
+    });
+    $('.map').live('click', function() {
+        console.log('click on map button');
+        $('#page:first').empty().load('map.html');
+    });
 });
 function createDropDown(){
     var source = $("#source");
@@ -64,3 +71,6 @@ function createDropDown(){
         $(this).val() + '</span></a></li>');
     });
 }
+//function loadPage(evt){
+//    
+//}
