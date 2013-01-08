@@ -95,11 +95,6 @@ jQuery(function($) {
       slide = false;
     }
   });
-
-  $('.projects').live('click', function() {
-    console.log('click on projects button');
-    $('#page:first').empty().load('blog.html');
-  });
   $('.map').live('click', function() {
     console.log('click on map button');
     $('#page:first').empty().load('map.html');
