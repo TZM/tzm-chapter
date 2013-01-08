@@ -9,15 +9,18 @@ function ZmgcClient() {
       self.drawMap();
   };
 
-  var width = $("#map").width(),
-      mapCanvasHeight = (width * 0.49);
-
   this.drawMap = function() {
     var data;
+    var width = $("#map").width();
 
     // Most parts of D3 don"t know anything about SVG—only DOM.
-    self.svg = d3.select("#map").append("svg:svg").attr("width", "100%").attr("height", mapCanvasHeight);
-    self.map = d3.geo.equirectangular().scale(width);
+    self.svg = d3.select("#map").append("svg:svg")
+        .attr("width", "100%")
+        .attr("height", "87%")
+        .attr("viewBox", "0 0 1024 768");
+    self.map = d3.geo.equirectangular()
+        .scale(width)
+        .translate([500, 400]);
     self.projection = d3.geo.path().projection(self.map);
 
     // Load data from .json file
