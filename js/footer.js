@@ -46,6 +46,29 @@ jQuery(function($) {
     }
   });
 
+  // project toggle
+  var projectToggle = $( ".projects" ).on( "click", function( event ) {
+    event.preventDefault();
+
+    if ( projectToggle.hasClass( "active" ) ) {
+      projectToggle.removeClass( "active" );
+      $( "body" ).css( "marginTop", 0 );
+    } else {
+      projectToggle.addClass( "active" );
+      $( "body" ).css( "marginTop", 150 );
+    }
+  });
+
+  $( document ).click(function( event ) {
+    var target = $( event.target );
+    if ( target.closest( ".project-select, .projects" ).length ||
+    !projectToggle.hasClass( "active" ) ) {
+      return;
+    }
+
+    projectToggle.removeClass( "active" );
+    $( "body" ).css( "marginTop", 0 );
+  });
   // footer navigation
   var slide = false;
   var height = $('#footer').height();
