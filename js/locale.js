@@ -34,6 +34,7 @@ jQuery(function($) {
 
 		$("li.language-menu").live("click", function(){
 			$("#language-menu").toggle();
+			return false;
 		});
 	});
 
@@ -73,6 +74,8 @@ jQuery(function($) {
 
 		$("#language-menu a").removeClass("selected-language");
 		$this.addClass("selected-language");
+
+		return false;
   });
 
 });
