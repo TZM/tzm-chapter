@@ -54,6 +54,10 @@ jQuery(function($) {
     $('#page:first').empty().load('map.html');
     ZmgcClient();
   });
+  $('.guide').live('click', function() {
+    console.log('click on guide button');
+    $('#page:first').empty().load('../guide/guide.html');
+  });
 });
 
 function createDropDown() {
