@@ -1,58 +1,5 @@
 jQuery(function($) {
 
-  var setLng = $.url().param('setLng');
-  var setLngCookie = $.cookie('i18next');
-
-  if (setLngCookie) {
-	language = setLngCookie;
-  }
-  else {
-	if (setLng) {
-	  language_complete = setLng.split("-");
-	} else {
-	  language_complete = navigator.language.split("-");
-	}
-
-	language = (language_complete[0]);
-  }
-
-  console.log("I speak (root): %s", language);
-
-  //Make sure the language selector has the correct language selected on initial page load.
-  $("select.language").val($("option.lang-" + language).val());
-
-  function setLanguage() {
-    // save to use translation function as resources are fetched
-    $(".tzm-i18n").i18n();
-    $(".page-i18n").i18n();
-    $(".menu").i18n();
-    $(".user-menu").i18n();
-    $(".search-form").i18n();
-    $(".footer-i18n").i18n();
-  }
-
-  i18n.init({
-    lng: language,
-    debug: true
-  }, setLanguage);
-
-  // language selector
-  $("select.language").change(function() {
-    var booReload = false; // TRUE = reload the page; FALSE = do not reload the page
-    var value = $(this).val();
-    var arrValueParts = value.split("-");
-    var language = arrValueParts[0];
-
-    if (booReload) {
-      window.location.href = "/index.html?setLng=" + language;
-    } else {
-      i18n.init({
-        lng: language,
-        debug: true
-      }, setLanguage);
-    }
-  });
-
   // project toggle
   var projectToggle = $( ".projects" ).on( "click", function( event ) {
     event.preventDefault();

@@ -276,6 +276,42 @@ header nav .menu li.in-path a {
     color: #333;
 }
 
+.language-menu {
+	position: relative;
+}
+
+#language-menu {
+	background-color: #FFFFFF;
+	display: none;
+	height: auto;
+	padding: 10px;
+	position: absolute;
+	right: 0;
+	top: 40px;
+	width: 447px;
+}
+
+.language-list {
+	float: left;
+	height: auto;
+	width: auto;
+}
+
+#language-menu a {
+	background-color: #FFFFFF;
+	color: #000000;
+	float: left;
+	font-size: 85%;
+	height: auto;
+	margin: 5px;
+	padding: 5px;
+	width: auto;
+}
+
+#language-menu a:hover, #language-menu a.selected-language {
+	background-color: #CCCCCC;
+}
+
 /*******************************************************************************/
 /* Profile
 /*******************************************************************************/

@@ -81,6 +81,14 @@
             </div>
           </form>
         </li>
+				<li class="language-menu">
+					<a href="#" class="tooltip">
+						<a href="#" class="tooltip"><img src='./resources/language_icon.png' alt="" /><span data-i18n="menu.language"></span>
+						<div id="language-menu">
+							<!-- Dynamically generated in footer.js -->
+						</div>
+					</a>
+				</li>
       </ul>
       <h1><a href="/" class="tzm-i18n" data-i18n="tzm"></a></h1>
   </nav><!-- id="hd"-->
@@ -397,20 +405,6 @@
           </div>
         </div><!-- End Item Container -->
       </li><!-- End Fourth Item -->
-      <li><a href="/" class="dropup"  data-i18n="footer.languages">Languages</a><!-- Language selector -->
-        <div class="footer_dropup drop1columns"><!-- Begin Item Container -->
-          <select class="language">
-            <option class="lang-br" class="lang/class" value="pt-BR">Brasilian</option>
-            <option class="lang-fr" class="lang/class" value="fr-FR">French</option>
-            <option class="lang-de" class="lang/class" value="de-DE">Germany</option>
-            <option class="lang-hi" class="lang/class" value="in-IN">Hindi</option>
-            <option class="lang-jp" class="lang/class" value="jp-JP">Japanese</option>
-            <option class="lang-rs" class="lang/class" value="rs-RS">Serbian</option>
-            <option class="lang-ru" class="lang/class" value="ru-RU">Rusian</option>
-            <option class="lang-en" class="lang/class" value="en-UK">English - UK</option>
-            <option class="lang-us" class="lang/class" value="en-US">English - US</option>
-          </select>
-      </li><!-- End language selector -->
       <li id="social"><!-- Begin Social Icons Item -->
         <ul><!-- Social Icons -->
           <!-- The span is the text appearing on hover, use the tooltip class in the link -->
@@ -431,6 +425,7 @@
   <script>window.jQuery || document.write('<script src="js/vendor/i18next-1.5.10.min.js"><\/script>')</script>
   <script type="text/javascript" src="js/vendor/purl.js"></script>
   <script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/locale.js"></script>
   <script type="text/javascript" src="js/footer.js"></script>
 </body>
 </html>

@@ -10,6 +10,7 @@
     ,"calendar": "Calendar"
     ,"forums": "Forums"
     ,"more": "More »"
+		,"language": "Language"
   }
   ,"search": {
     "advanced": "Advanced"
@@ -22,6 +23,16 @@
     ,"log-out": "Log out"
     ,"contact": "Contact"
     ,"help": "Help"
+  }
+  ,"language": {
+    "de": "German"
+    ,"en": "English - UK"
+    ,"fr": "French"
+    ,"jp": "Japanese"
+    ,"pt": "Brasilian"
+		,"rs": "Serbian"
+    ,"ru": "Russian"
+    ,"us": "English - US"
   }
   ,"footer": {
     "zeitgeist": "Zeitgeist"
