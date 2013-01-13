@@ -1,14 +1,21 @@
 jQuery(function($) {
 
   var setLng = $.url().param('setLng');
+  var setLngCookie = $.cookie('i18next');
 
-  if (setLng) {
-    language_complete = setLng.split("-");
-  } else {
-    language_complete = navigator.language.split("-");
+  if (setLngCookie) {
+	language = setLngCookie;
+  }
+  else {
+	if (setLng) {
+	  language_complete = setLng.split("-");
+	} else {
+	  language_complete = navigator.language.split("-");
+	}
+
+	language = (language_complete[0]);
   }
 
-  language = (language_complete[0]);
   console.log("I speak (root): %s", language);
 
   //Make sure the language selector has the correct language selected on initial page load.
