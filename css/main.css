@@ -483,6 +483,24 @@ div[role="main"] .mainarticle #nav-toggle.active {
 }
 
 /**************************************************************************
+* Left navigation menu items
+* ***********************************************************************/
+#nav-container span.menu-toggle {
+width: 21px;
+height: 12px;
+float: right;
+margin: 3px -5px 0 0;
+}
+
+#nav-container h3 span.menu-toggle {
+    background: url('../resources/nav-arrow-close-hover.png') no-repeat scroll top left;
+}
+
+#nav-container h3 span.menu-toggle:hover {
+    background: url('../resources/nav-arrow-close-hover.png') no-repeat scroll top left;
+}
+
+/**************************************************************************
 * Footer
 * ***********************************************************************/
 
@@ -984,4 +1002,3 @@ a#footer_trigger.trigger_active {
 }
 
 @media print{*{text-shadow:none !important;} body{overflow:visible !important;} #header{display:none;} #notification{display:none !important;}
-

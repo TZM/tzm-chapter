@@ -20,6 +20,14 @@ function ZmgcGuide() {
       }
     });
   }
+  // menu open close
+  this.leftMenuToggle = function () {
+    var leftMenuToggle = $( ".menu-toggle" ).on( "click", function( event ) {
+      event.preventDefault();
+      console.log('we clicked this menu item');
+    });
+  }
+
   // Initialise
   this.init();
 };
