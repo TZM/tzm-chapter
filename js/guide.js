@@ -3,6 +3,7 @@ function ZmgcGuide() {
 
   this.init = function() {
       self.leftNavToggle();
+      self.leftMenuToggle();
   };
   // left-navigation toggle
   this.leftNavToggle = function () {
@@ -22,10 +23,11 @@ function ZmgcGuide() {
   }
   // menu open close
   this.leftMenuToggle = function () {
-    var leftMenuToggle = $( ".menu-toggle" ).on( "click", function( event ) {
-      event.preventDefault();
-      console.log('we clicked this menu item');
-    });
+      $('#nav-container').on('click', '.section', function(e) {
+          e.preventDefault();
+
+          $(this).next().andSelf().toggleClass('active');
+      });
   }
 
   // Initialise

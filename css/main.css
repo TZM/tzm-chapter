@@ -366,7 +366,7 @@ header nav .search-form .submit-button {
     height: auto;
     overflow: none;
     /**padding-bottom:50px; adjust depending on the footer height plus 15px **/
-    padding: 35px 25px 50px 15px;
+    padding: 35px 25px 10px 15px;
 }
 
 #page p {
@@ -444,23 +444,6 @@ div[role="main"] .mainarticle #nav-toggle {
     z-index:-1;
 }
 
-div[role="main"] .mainarticle #nav-toggle:hover {
-    border: 4px solid #f99d33;
-}
-
-div[role="main"] .mainarticle #nav-toggle.active {
-    background-position: -168px 0;
-    background-color: #515356;
-}
-
-div[role="main"] .mainarticle #nav-toggle {
-    background: url('../resources/nav-close.png') no-repeat;
-}
-
-div[role="main"] .mainarticle #nav-toggle.active {
-    background: url('../resources/nav-open.png') no-repeat;
-}
-
 #nav-container ul {
     background: url('../resources/nav-ul-bkg.jpeg') left top repeat #393939;
     border-left: 4px solid #5a7772;
@@ -483,23 +466,75 @@ div[role="main"] .mainarticle #nav-toggle.active {
 }
 
 /**************************************************************************
+* Navigation Toggle button
+* ***********************************************************************/
+
+div[role="main"] .mainarticle #nav-toggle:hover {
+    border: 4px solid #f99d33;
+}
+
+div[role="main"] .mainarticle #nav-toggle {
+    background: url('../resources/nav-close.png') no-repeat;
+}
+
+div[role="main"] .mainarticle #nav-toggle.active {
+    background: url('../resources/nav-open.png') no-repeat;
+}
+
+/**************************************************************************
 * Left navigation menu items
 * ***********************************************************************/
+#nav-container h3, #nav-container h4 {
+    cursor: pointer;
+}
+
+#nav-container h3 span.menu-toggle, #nav-container h4 span.menu-toggle {
+    padding-right: 0;
+}
+
 #nav-container span.menu-toggle {
-width: 21px;
-height: 12px;
-float: right;
-margin: 3px -5px 0 0;
+    width: 21px;
+    height: 21px;
+    background-position: -283px -95px;
+    float: right;
+    margin: 3px -5px 0 0;
 }
 
-#nav-container h3 span.menu-toggle {
-    background: url('../resources/nav-arrow-close-hover.png') no-repeat scroll top left;
+#nav-container span.menu-toggle, #nav-container span.menu-toggle:hover, #nav-container span.menu-toggle.open,#nav-container span.menu-toggle.open:hover {
+    background: url(../resources/nav-arrows-sprite.png) no-repeat;
 }
 
-#nav-container h3 span.menu-toggle:hover {
-    background: url('../resources/nav-arrow-close-hover.png') no-repeat scroll top left;
+#nav-container span.menu-toggle {
+    background-position: 0 0;
+    width: 14px;
+    height: 12px;
 }
 
+#nav-container span.menu-toggle:hover {
+    background-position: -16px 0;
+    width: 14px;
+    height: 12px;
+}
+
+#nav-container span.menu-toggle.open {
+    background-position: -35px 0;
+    width: 12px;
+    height: 12px;
+}
+
+#nav-container span.menu-toggle.open:hover {
+    background-position: -52px 0;
+    width: 14px;
+    height: 11px;
+}
+
+#nav-container ul.active {
+    display: block;
+}
+
+#nav-container ul:not(.active) {
+  display: none;
+}
 /**************************************************************************
 * Footer
 * ***********************************************************************/
