@@ -965,7 +965,7 @@ a#footer_trigger {
     -moz-border-radius: 4px 4px 0px 0px;
     -webkit-border-radius: 4px 4px 0px 0px;
     border-radius: 4px 4px 0px 0px;
-    z-index:1;
+    z-index:2;
 }
 
 a.trigger_fixed {
