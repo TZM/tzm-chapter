@@ -5,7 +5,7 @@ function ZmgcGuide() {
       self.leftNavToggle();
       self.leftMenuToggle();
   };
-  // left-navigation toggle
+  // left-navigation block toggle
   this.leftNavToggle = function () {
     var leftNavToggle = $( "#nav-toggle" ).on( "click", function( event ) {
       event.preventDefault();
@@ -21,11 +21,11 @@ function ZmgcGuide() {
       }
     });
   }
-  // menu open close
+  // left menu open / close
   this.leftMenuToggle = function () {
       $('#nav-container').on('click', '.section', function(e) {
           e.preventDefault();
-
+          $('#nav-container ul.active').removeClass('active');
           $(this).next().andSelf().toggleClass('active');
       });
   }
