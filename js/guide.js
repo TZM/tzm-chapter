@@ -23,10 +23,12 @@ function ZmgcGuide() {
   }
   // left menu open / close
   this.leftMenuToggle = function () {
-      $('#nav-container').on('click', '.section', function(e) {
+      $('#nav-container').on("click", ".section", function(e) {
           e.preventDefault();
-          $('#nav-container ul.active').removeClass('active');
-          $(this).next().andSelf().toggleClass('active');
+          $("#nav-container ul.active").removeClass("active");
+          $("#nav-container .menu-toggle.open").removeClass("open");
+          $(this).next().andSelf().toggleClass("active");
+          $(this).find(".menu-toggle").addClass("open");
       });
   }
 
