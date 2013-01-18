@@ -833,7 +833,7 @@ div[role="main"] .mainarticle #nav-toggle.active {
 }
 
 #footer .note {
-    background: url("/resources/icons/note.png") no-repeat 0px 5px;
+    background: url("/resources/icons/note.png") no-repeat 0px 0px;
 }
 
 #footer .archive {
