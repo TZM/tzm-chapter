@@ -13,11 +13,12 @@ function ZmgcGuide() {
         leftNavToggle.removeClass( "active" );
         leftNavToggle.css( "marginLeft",  230 );
         $( "#nav-container" ).css( "marginLeft", 0 );
+        $( ".content" ).removeClass("open");
       } else {
         leftNavToggle.addClass( "active" );
         leftNavToggle.css( "marginLeft", -15 );
         $( "#nav-container" ).css( "marginLeft", -245 );
-        
+        $( ".content" ).toggleClass("open");
       }
     });
   }
@@ -33,6 +34,11 @@ function ZmgcGuide() {
     });
   }
 
+  // Load pages
+  $('.intro').live('click', function() {
+    console.log('click on intro button');
+    $('.content:first').empty().load('../guide/intro.html');
+  });
   // Initialise
   this.init();
 };
