@@ -61,6 +61,7 @@ This way, 'project leaders' and peers are able to review/test your contribution,
 
 <http://git-scm.com/docs> - Tutorials on using Git
 <http://pages.github.com> - How Github hosts your project pages
+<http://spritepad.wearekiss.com/> - To generate the sprites with css code.
 
 yes github can be an option in that each specialist interest group (SIG) has it's own free hosted project website using the gh-pages (http://pages.github.com/) this will front the 'code' / 'documents' / 'files' that are stored and shared on github for others to participate and contribute to.
 

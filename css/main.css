@@ -277,39 +277,39 @@ header nav .menu li.in-path a {
 }
 
 .language-menu {
-	position: relative;
+    position: relative;
 }
 
 #language-menu {
-	background-color: #FFFFFF;
-	display: none;
-	height: auto;
-	padding: 10px;
-	position: absolute;
-	right: 0;
-	top: 40px;
-	width: 447px;
+    background-color: #FFFFFF;
+    display: none;
+    height: auto;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 447px;
 }
 
 .language-list {
-	float: left;
-	height: auto;
-	width: auto;
+    float: left;
+    height: auto;
+    width: auto;
 }
 
 #language-menu a {
-	background-color: #FFFFFF;
-	color: #000000;
-	float: left;
-	font-size: 85%;
-	height: auto;
-	margin: 5px;
-	padding: 5px;
-	width: auto;
+    background-color: #FFFFFF;
+    color: #000000;
+    float: left;
+    font-size: 85%;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+    width: auto;
 }
 
 #language-menu a:hover, #language-menu a.selected-language {
-	background-color: #CCCCCC;
+    background-color: #CCCCCC;
 }
 
 /*******************************************************************************/
@@ -366,12 +366,174 @@ header nav .search-form .submit-button {
     height: auto;
     overflow: none;
     /**padding-bottom:50px; adjust depending on the footer height plus 15px **/
-    padding: 35px 25px 50px 15px;
+    padding: 35px 25px 10px 15px;
 }
 
 #page p {
     display: block;
     margin: 15px 0;
+}
+
+/*******************************************************************************/
+/* Left Navigation Menu
+/*******************************************************************************/
+#nav-container {
+    color: #eaeaea;
+}
+#nav-container h3, #nav-container h4, div[role="main"] aside.secondary h1, div[role="main"] aside.secondary h2, div[role="main"] aside.secondary h3, div[role="main"] aside.secondary h4, div[role="main"] aside.secondary h5, div[role="main"] aside.secondary h6 {
+    text-shadow: 0 2px 2px #000;
+}
+
+body aside#nav-container #primary-nav h3 {
+    clear: both;
+}
+
+body aside#nav-container h3 {
+    font-size: 100%;
+    margin-top: 7px;
+}
+
+body aside#nav-container {
+    background: url('../resources/nav-container.jpeg') left top repeat #4f4f50;
+    width: 232px;
+    height: 85%;
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    z-index: -2;
+}
+
+body aside#nav-container {
+    padding: 5px 12px;
+    -o-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#nav-container h3, #nav-container h4 {
+    background: url('../resources/nav-bkg.jpeg');
+    border-left: 4px solid #5a7772;
+    padding: 5px 8px 5px 10px;
+    overflow: visible;
+}
+
+nav ul, nav ol {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+}
+
+div[role="main"] .mainarticle #nav-toggle {
+    width: 38px;
+    height: 38px;
+    background-position: 130px 0;
+    background-color: #515356;
+    position: fixed;
+    top: 8.8em;
+    margin-left: 230px;
+    display: block;
+    border-radius: 23px;
+    border: 4px solid #eaeaea;
+    cursor: pointer;
+    z-index:-1;
+}
+
+#nav-container ul {
+    background: url('../resources/nav-ul-bkg.jpeg') left top repeat #393939;
+    border-left: 4px solid #5a7772;
+}
+
+#nav-container li {
+    margin-left: 10px;
+}
+
+
+#nav-container li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+}
+
+#nav-container li a:hover {
+    background: #ccc;
+    color: #000;
+}
+
+/**************************************************************************
+* Navigation Toggle button
+* ***********************************************************************/
+
+div[role="main"] .mainarticle #nav-toggle:hover {
+    border: 4px solid #f99d33;
+}
+
+div[role="main"] .mainarticle #nav-toggle {
+    background: url('../resources/nav-close.png') no-repeat;
+}
+
+div[role="main"] .mainarticle #nav-toggle.active {
+    background: url('../resources/nav-open.png') no-repeat;
+}
+
+/**************************************************************************
+* Left navigation menu items
+* ***********************************************************************/
+#nav-container h3, #nav-container h4 {
+    cursor: pointer;
+}
+
+#nav-container h3 span.menu-toggle, #nav-container h4 span.menu-toggle {
+    padding-right: 0;
+}
+
+#nav-container span.menu-toggle {
+    width: 21px;
+    height: 21px;
+    background-position: -283px -95px;
+    float: right;
+    margin: 3px -5px 0 0;
+}
+
+#nav-container span.menu-toggle, #nav-container span.menu-toggle:hover, #nav-container span.menu-toggle.open,#nav-container span.menu-toggle.open:hover {
+    background: url(../resources/nav-arrows-sprite.png) no-repeat;
+}
+
+#nav-container span.menu-toggle {
+    background-position: 0 0;
+    width: 14px;
+    height: 12px;
+}
+
+#nav-container span.menu-toggle:hover {
+    background-position: -16px 0;
+    width: 14px;
+    height: 12px;
+}
+
+#nav-container span.menu-toggle.open {
+    background-position: -35px 0;
+    width: 12px;
+    height: 12px;
+}
+
+#nav-container span.menu-toggle.open:hover {
+    background-position: -52px 0;
+    width: 14px;
+    height: 11px;
+}
+
+#nav-container ul.active {
+    display: block;
+}
+
+#nav-container ul:not(.active) {
+  display: none;
 }
 /**************************************************************************
 * Footer
@@ -396,6 +558,7 @@ header nav .search-form .submit-button {
     -moz-box-shadow: 0px 0px 5px #222;
     -webkit-box-shadow: 0px 0px 5px #222;
     box-shadow: 0px 0px 5px #222;
+    z-index:2;
 }
 
 #footer li {
@@ -837,6 +1000,7 @@ a#footer_trigger {
     -moz-border-radius: 4px 4px 0px 0px;
     -webkit-border-radius: 4px 4px 0px 0px;
     border-radius: 4px 4px 0px 0px;
+    z-index:2;
 }
 
 a.trigger_fixed {
