@@ -23,13 +23,14 @@ function ZmgcGuide() {
   }
   // left menu open / close
   this.leftMenuToggle = function () {
-      $('#nav-container').on("click", ".section", function(e) {
-          e.preventDefault();
-          $("#nav-container ul.active").removeClass("active");
-          $("#nav-container .menu-toggle.open").removeClass("open");
-          $(this).next().andSelf().toggleClass("active");
-          $(this).find(".menu-toggle").addClass("open");
-      });
+    $('#nav-container').on('click', '.section', function(e) {
+        e.preventDefault();
+
+        var $shortcut = $(this).next();
+        $('#nav-container ul.active').not($shortcut).removeClass('active');
+        //$("#nav-container .menu-toggle.open").not($shortcut).removeClass("open");
+        $shortcut.andSelf().toggleClass('active').find(".menu-toggle").toggleClass("open");
+    });
   }
 
   // Initialise

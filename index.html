@@ -95,10 +95,17 @@
   </nav><!-- id="hd"-->
   </header>
   <div id="page" class="page-i18n">
+    
     <p id="notification" style="display: none;"></p>
+    
     <!--${languages} Bread crumbs -->
       <p data-i18n="welcome.p1"></p>
       <p data-i18n="welcome.p2"></p>
+      <div id="chat">
+      <div id="messages"></div>
+      <input type="text" id="text-input" />
+      <input type="button" value="Send" id="send-button" />
+      </div>
   </div>
   <div><!-- END FOOTER -->
     <ul id="footer" class="fullwidth footer-i18n">
@@ -384,6 +391,7 @@
   <a id="footer_trigger" class="trigger_active" href="#"></a><!-- Trigger Button -->
   <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+  <script src="js/vendor/handlebars-1.0.rc.1.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript" src="//i18next.com/public/download/versions/i18next-1.5.10.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/i18next-1.5.10.min.js"><\/script>')</script>
   <script type="text/javascript" src="js/vendor/purl.js"></script>
@@ -391,5 +399,18 @@
 	<script type="text/javascript" src="js/locale.js"></script>
 	<script type="text/javascript" src="js/network.js"></script>
   <script type="text/javascript" src="js/footer.js"></script>
+  <script type="text/javascript" src="http://chapter.zmgc.net/nowjs/now.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+        now.receiveMessage = function(name, message){
+        $("#messages").append('<br />' + '<a href="${path}">' + name + '</a>' + ': ' + message);
+        }
+        $("#send-button").click(function(){
+        now.distributeMessage($("#text-input").val());
+        $("#text-input").val("");
+        });
+      now.name = "${name}";
+    });
+  </script>
 </body>
 </html>
