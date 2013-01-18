@@ -1,3 +1,7 @@
+/*#tzm-network-popup {*/
+/*	left: auto !important;*/
+/*}*/
+
 #chapters_table {
     float: left;
     width: 48%;
@@ -33,19 +37,21 @@
     opacity: 1;
 }
 .chapters {
-    background: url("../resources/flags.gif") no-repeat scroll 0 0 padding-box transparent;
-    float: left;
-    height: 11px;
-    margin-right: 5px;
-    opacity: 0.6;
-    padding-left: 16px;
-    width: 0;
+	background: url("../resources/flags.gif") no-repeat scroll 0 0 padding-box transparent;
+	display: block !important;
+	font-size: 100% !important;
+	height: 11px;
+	line-height: 100% !important;
+	margin: 0 5px 10px 0 !important;
+	opacity: 0.6;
+	padding-left: 16px !important;
+	white-space: nowrap;
+	width: 0;
 }
 .flag-margin {
-    color: #000000;
-    line-height: 1px;
-    margin-left: 2px;
-    white-space: nowrap;
+	display: block;
+	margin-left: 2px;
+	white-space: nowrap;
 }
 .c_argentina {
     background-position: 0 -99px;
@@ -335,10 +341,10 @@
 .c_slovenia:hover {
     background-position: -16px -2179px;
 }
-.c_southafrika {
+.c_southafrica {
     background-position: 0 -2674px;
 }
-.c_southafrika:hover {
+.c_southafrica:hover {
     background-position: -16px -2674px;
 }
 .c_spain {
@@ -382,6 +388,12 @@
 }
 .c_unitedkingdom:hover {
     background-position: -16px -858px;
+}
+.c_unitedstatesofamerica {
+    background-position: 0 -2509px;
+}
+.c_unitedstatesofamerica:hover {
+    background-position: -16px -2509px;
 }
 .c_venezuela {
     background-position: 0 -2564px;

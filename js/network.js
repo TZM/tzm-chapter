@@ -36,6 +36,7 @@ function buildChapters() {
 			//console.log(countries);
 
 			var strHtml;
+			var strClass;
 			var intIndex;
 			var arrHtml = [];
 			arrHtml[0] = [];
@@ -55,10 +56,16 @@ function buildChapters() {
 					intCurrentColumn++;
 				}
 
+				strClass = row.country;
+				strClass = strClass.toLowerCase();
+				strClass = strClass.replace(/ /g, "");
+
 				strHtml = "";
 				strHtml += "<li>";
-				strHtml += "<a href=\"" + row.link + "\">";
+				strHtml += "<a href=\"" + row.link + "\" class=\"chapters c_" + strClass + "\">";
+				strHtml += "<span class=\"flag-margin\">";
 				strHtml += row.country;
+				strHtml += "</span>";
 				strHtml += "</a>";
 				strHtml += "</li>";
 
