@@ -1,12 +1,6 @@
 !function ($) {
 
   "use strict"; // jshint ;_;
-
-  $('.sign-in').click(function (e) {
-     console.log('we click on sign-in');
-    e.preventDefault();
-    $(this).tab('show');
-  });
   
  /* TAB CLASS DEFINITION
   * ==================== */
@@ -21,7 +15,7 @@
 
   , show: function () {
       var $this = this.element
-        , $ul = $this.closest('ul:not(.dropdown-menu)')
+        , $ul = $this.closest('ul:not(.form-switcher)')
         , selector = $this.attr('data-target')
         , previous
         , $target
@@ -64,7 +58,7 @@
       function next() {
         $active
           .removeClass('active')
-          .find('> .dropdown-menu > .active')
+          .find('> .form-switcher > .active')
           .removeClass('active')
 
         element.addClass('active')
@@ -76,7 +70,7 @@
           element.removeClass('fade')
         }
 
-        if ( element.parent('.dropdown-menu') ) {
+        if ( element.parent('.form-switcher') ) {
           element.closest('li.dropdown').addClass('active')
         }
 
