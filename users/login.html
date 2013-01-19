@@ -1,0 +1,59 @@
+<form id="login-form" action="#" method="post">
+  <div id="email">
+    <label for="email">Login</label>
+    <input type="text" name="email" placeholder="email@host.tld">
+  </div>
+  <div id="password">
+    <label for="password">Password</label>
+    <input type="password" name="password" placeholder="password">
+  </div>
+  <div id="submit">
+    <input type="submit" value="Login">
+  </div>
+</form>
+
+<ul id="sign-reg-selector">
+  <li class="active"><a href="#" data-toggle="tab" class="sign-in">Sign in</a></li>
+  <li><a href="#" data-toggle="tab" class="register-form">Register</a></li>
+</ul>
+  
+<div id="sign-reg-content" class="tab-content">
+  <!--Log in Auth ID Providers -->
+  <div id="sign-in" class="tab-pane fade active in">
+    <div id="facebook-login" class="icon"><a href="/auth/facebook" style="border: 0px"> <img style="border: 0px" src="/resources/facebook.png" type="image/png" title="Log in with Facebook">
+    <!--Log in with facebook--></a></div>
+    <div id="twitter-login" class="icon"><a href="/auth/twitter" style="border: 0px"><img style="border: 0px" src="/resources/twitter.png" type="image/png" title="Log in with Twitter">
+    <!--Log in with twitter--></a></div>
+  </div>
+  <!-- / Log in Auth ID Providers -->
+  <!-- Registration Form -->
+  <div id="register-form" class="tab-pane fade">
+    <form action="#" method="post">
+      <div id="first_name">
+        <label for="first_name">First Name
+          <input type="text" name="first_name">
+        </label>
+      </div>
+      <div id="last_name">
+        <label for="last_name">Last Name
+          <input type="text" name="last_name">
+        </label>
+      </div>
+      <div id="email">
+        <label for="email">Email
+          <input type="email" name="email">
+        </label>
+      </div>
+      <div id="password">
+        <label for="password">Password
+          <input type="password" name="password">
+        </label>
+      </div>
+      <div id="submit">
+        <input type="submit" value="Register" class="btn-inverse">
+      </div>
+    </form>
+  </div>
+  <!-- / Registration Form -->
+</div>
+<script src="../js/login.js" type="text/javascript" charset="utf-8"></script>

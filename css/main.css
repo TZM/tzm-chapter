@@ -29,6 +29,22 @@ h1, p {
     margin-bottom: 13px;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.affix {
+  position: fixed;
+}
+
 .fullwidth {
     width: 100%;
     margin: 0;
@@ -359,6 +375,32 @@ header nav .search-form .placeholder-field {
 header nav .search-form .submit-button {
     display: none;
 }
+
+/*******************************************************************************/
+/* Login Form
+/*******************************************************************************/
+.tab-content {
+  overflow: auto;
+}
+.tab-content > .tab-pane {
+  display: none;
+}
+
+.tab-content > .active {
+  display: block;
+}
+
+#user-login-register-form {
+    position: relative;
+    float: right;
+    width: 225px;
+    top: 40px;
+    right:10%;
+    padding: 5px none;
+    z-index: 1000;
+    border: 1px solid #ccc;
+}
+
 /*******************************************************************************/
 /* PAGE
 /*******************************************************************************/
@@ -441,7 +483,7 @@ div[role="main"] .mainarticle #nav-toggle {
     border-radius: 23px;
     border: 4px solid #eaeaea;
     cursor: pointer;
-    z-index:-1;
+    z-index: -1;
 }
 
 #nav-container ul {
@@ -533,22 +575,22 @@ div[role="main"] .mainarticle #nav-toggle.active {
 }
 
 #nav-container ul:not(.active) {
-  display: none;
+    display: none;
 }
 
 /**************************************************************************
 * Guide page css
 * ***********************************************************************/
 div[role="main"] .mainarticle .content {
-    /* initially this is 232px from the left*/
-    margin-left: 240px;
-    border: 4px solid #f99d33;
+/* initially this is 232px from the left*/
+margin-left: 240px;
+border: 4px solid #f99d33;
 }
 
 div[role="main"] .mainarticle .content.open {
-    /* initially this is 232px from the left*/
-    margin-left: 20px;
-    border: 4px solid #f99d33;
+/* initially this is 232px from the left*/
+margin-left: 20px;
+border: 4px solid #f99d33;
 }
 /**************************************************************************
 * Footer
@@ -573,7 +615,7 @@ div[role="main"] .mainarticle .content.open {
     -moz-box-shadow: 0px 0px 5px #222;
     -webkit-box-shadow: 0px 0px 5px #222;
     box-shadow: 0px 0px 5px #222;
-    z-index:2;
+    z-index: 2;
 }
 
 #footer li {
@@ -1015,7 +1057,7 @@ a#footer_trigger {
     -moz-border-radius: 4px 4px 0px 0px;
     -webkit-border-radius: 4px 4px 0px 0px;
     border-radius: 4px 4px 0px 0px;
-    z-index:2;
+    z-index: 2;
 }
 
 a.trigger_fixed {
@@ -1052,3 +1094,4 @@ a#footer_trigger.trigger_active {
 }
 
 @media print{*{text-shadow:none !important;} body{overflow:visible !important;} #header{display:none;} #notification{display:none !important;}
+

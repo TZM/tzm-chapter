@@ -69,8 +69,8 @@
       <ul class="user-menu">
         <li><a href="#" class="tooltip"><img src='http://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=32' alt="" /><span data-i18n="user.gravatar"></span></a></li>
         <li><a href="#" class="tooltip"><img src='./resources/profile.png' alt="" /><span data-i18n="user.profile"></span></a></li>
-        <li><a href="#" class="tooltip"><img src='./resources/login.png' alt="" /><span data-i18n="user.login"></span></a></li>
-        <li><a href="#" class="tooltip"><img src='./resources/logout.png' alt="" /><span data-i18n="user.log-out"></span></a></li>
+        <li><a href="#" id="login" class="tooltip"><img src='./resources/login.png' alt="" /><span data-i18n="user.login"></span></a></li>
+        <li class="hide"><a href="#" class="tooltip"><img src='./resources/logout.png' alt="" /><span data-i18n="user.log-out"></span></a></li>
         <li><a href="#" class="tooltip"><img src='./resources/communication.png' alt="" /><span data-i18n="user.contact"></span></a></li>
         <li><a href="#" class="tooltip"><img src='./resources/lightbulb.png' alt="" /><span data-i18n="user.help"></span></a></li>
         <li><a href="#" class="tooltip"><img src='./resources/advanced_search_icon.png' alt="" /><span data-i18n="search.advanced"></span></a></li>
@@ -82,17 +82,16 @@
             </div>
           </form>
         </li>
-				<li class="language-menu">
-					<a href="#" class="tooltip">
-						<a href="#" class="tooltip"><img src='./resources/language_icon.png' alt="" /><span data-i18n="menu.language"></span>
-						<div id="language-menu">
-							<!-- Dynamically generated in footer.js -->
-						</div>
-					</a>
-				</li>
+        <li class="language-menu">
+          <a href="#" class="tooltip"><img src='./resources/language_icon.png' alt="" /><span data-i18n="menu.language"></span>
+          <div id="language-menu">
+            <!-- Dynamically generated in footer.js -->
+          </div>
+        </li>
       </ul>
       <h1><a href="/" class="tzm-i18n" data-i18n="tzm"></a></h1>
   </nav><!-- id="hd"-->
+  <div id="user-login-register-form" class="hide"></div>
   </header>
   <div id="page" class="page-i18n">
     

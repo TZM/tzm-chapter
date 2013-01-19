@@ -23,6 +23,14 @@ jQuery(function($) {
     projectToggle.removeClass( "active" );
     $( "body" ).css( "marginTop", 0 );
   });
+  
+  // open login form
+  $('#login').click(function (e) {
+    console.log('click on login');
+    $('#user-login-register-form').toggleClass( "show" ).load('/users/login.html');
+    e.stopPropagation();
+  });
+
   // footer navigation
   var slide = false;
   var height = $('#footer').height();
@@ -60,19 +68,7 @@ jQuery(function($) {
   });
 });
 
-function createDropDown() {
-  var source = $("#source");
-  var selected = source.find("option[selected]");
-  var options = $("option", source);
 
-  $("body").append('<dl id="target" class="dropdown"></dl>')
-  $("#target").append('<dt><a href="#">' + selected.text() + '<span class="value">' + selected.val() + '</span></a></dt>')
-  $("#target").append('<dd><ul></ul></dd>')
-
-  options.each(function() {
-    $("#target dd ul").append('<li><a href="#">' + $(this).text() + '<span class="value">' + $(this).val() + '</span></a></li>');
-  });
-}
 //function loadPage(evt){
 //
 //}
